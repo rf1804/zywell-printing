@@ -56,14 +56,15 @@ static POSWIFIManager *shareManager = nil;
 /// @param data data
 -(void)POSWriteCommandWithData:(NSData *)data{
     if (_connectOK) {
-         NSLog(@"----%@",data);
+         //NSLog(@"----%@",data);
         if (commandSendMode==0){
             [_sendSocket writeData:data withTimeout:-1 tag:0];
            
         }
-        else
+        else{
             [_commandBuffer addObject: data];
-        //[_sendSocket writeData:data withTimeout:-1 tag:0];
+//            [_sendSocket writeData:data withTimeout:-1 tag:0];
+        }
     }
 
     
@@ -208,9 +209,10 @@ send messages
     if ([self.delegate respondsToSelector:@selector(POSWIFIManager:didReadData:tag:)]) {
         [self.delegate POSWIFIManager:self didReadData:data tag:tag];
     }
-    self.callBackBlock(data);
-    NSLog(@"%s %d, ==读取到从服务端返回的内容=== %@", __FUNCTION__, __LINE__, msg);
+//    self.callBackBlock(data);
+//    NSLog(@"%s %d, ==读取到从服务端返回的内容=== %@", __FUNCTION__, __LINE__, msg);
     
+    NSLog(@"%@", data);
     [_sendSocket readDataWithTimeout: -1 tag: 0];
 }
 

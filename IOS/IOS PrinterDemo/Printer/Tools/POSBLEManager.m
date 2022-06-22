@@ -1,9 +1,9 @@
 //
-//  PosBLEManager.m
+//  POSBLEManager.m
 //  Printer
 //
-//  Created by apple on 16/4/5.
-//  Copyright © 2016年 Admin. All rights reserved.
+//  Created by ding on 16/7/19.
+//  Copyright © 2019年 ding. All rights reserved.
 //
 
 #import "POSBLEManager.h"
@@ -38,17 +38,19 @@ static POSBLEManager *shareInstance = nil;
 }
 #pragma mark - 开始扫描
 - (void)POSstartScan {
-    [_manager startScan];
+//    [_manager startScan];
+    [_manager reScan];
 }
 
 #pragma mark - 停止扫描
 - (void)POSstopScan {
-    [_manager stopScan]; 
+    [_manager stopScan];
 }
 
 #pragma mark - 手动断开现连设备 不会重连
 - (void)POSdisconnectRootPeripheral {
     [_manager disconnectRootPeripheral];
+    _connectOK=NO;
 }
 
 #pragma mark - 发送数据
@@ -59,7 +61,6 @@ static POSBLEManager *shareInstance = nil;
 
 //发送指令的方法
 -(void)POSWriteCommandWithData:(NSData *)data{
-
     [_manager writeCommadnToPrinterWthitData:data];
 }
 //发送指令，并带回调的方法
@@ -87,6 +88,7 @@ static POSBLEManager *shareInstance = nil;
         if (isConnected) {
             if ([self.delegate respondsToSelector:@selector(POSdidConnectPeripheral:)]) {
                 [self.delegate POSdidConnectPeripheral:peripheral];
+                self->_connectOK=YES;
             }
         }else {
             if ([self.delegate respondsToSelector:@selector(POSdidFailToConnectPeripheral:error:)]) {
@@ -119,15 +121,17 @@ static POSBLEManager *shareInstance = nil;
  *  断开设备
  */
 - (void)BLEManagerDelegate:(BLEManager *)BLEmanager disconnectPeripheral:(CBPeripheral *)peripheral isAutoDisconnect:(BOOL)isAutoDisconnect{
-    if ([self.delegate respondsToSelector:@selector(POSdidDisconnectPeripheral:isAutoDisconnect:)]) {
-        [self.delegate POSdidDisconnectPeripheral:peripheral isAutoDisconnect:isAutoDisconnect];
-    }
+    //这里在打印机主动断开连接时，会使APP闪退
+//    if ([self.delegate respondsToSelector:@selector(POSdidDisconnectPeripheral:isAutoDisconnect:)]) {
+//        [self.delegate POSdidDisconnectPeripheral:peripheral isAutoDisconnect:isAutoDisconnect];
+//    }
 }
 
 - (void)BLEManagerDelegate:(BLEManager *)BLEmanager didWriteValueForCharacteristic:(CBCharacteristic *)character error:(NSError *)error {
     if ([self.delegate respondsToSelector:@selector(POSdidWriteValueForCharacteristic:error:)]) {
         [self.delegate POSdidWriteValueForCharacteristic:character error:error];
     }
+     
 }
 
 - (void)BLEManagerDelegate:(BLEManager *)BLEmanager didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
