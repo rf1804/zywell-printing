@@ -42,6 +42,14 @@
 		18E462FA1CA515DE00F8DACE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E462F91CA515DE00F8DACE /* CFNetwork.framework */; };
 		18E462FC1CA5425700F8DACE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E462FB1CA5425700F8DACE /* SystemConfiguration.framework */; };
 		2E64D6901CD34E080009D102 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E64D68F1CD34E080009D102 /* MainViewController.m */; };
+		350E0FA226366CBF00C7DCFF /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E0FA126366CBF00C7DCFF /* SwiftViewController.swift */; };
+		3536F827276890AA00D5396F /* PrinterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3536F826276890AA00D5396F /* PrinterManager.m */; };
+		353BB8C126396050003CED81 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 353BB8BC2639604F003CED81 /* Documentation.html */; };
+		353BB8C226396050003CED81 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BB8BD2639604F003CED81 /* GCDAsyncUdpSocket.m */; };
+		353BB8C326396050003CED81 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BB8BE2639604F003CED81 /* GCDAsyncSocket.m */; };
+		3549851526A8156D0047D0EA /* MyBluetoothDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3549851426A8156D0047D0EA /* MyBluetoothDevice.m */; };
+		3549851826A815C50047D0EA /* BTDeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3549851726A815C50047D0EA /* BTDeviceCell.m */; };
+		35F8266A27F5AADE0063595D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F8266927F5AADE0063595D /* TestViewController.swift */; };
 		9BA6FF3D1D3E312E005EA527 /* TscCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6FF3C1D3E312E005EA527 /* TscCommand.m */; };
 		9BA6FF401D3E3163005EA527 /* PosCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6FF3F1D3E3163005EA527 /* PosCommand.m */; };
 		9BA6FF431D3E3181005EA527 /* ImageTranster.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6FF421D3E3181005EA527 /* ImageTranster.m */; };
@@ -74,7 +82,6 @@
 		184D17451CBB58050001D98E /* POSSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSSDK.h; sourceTree = "<group>"; };
 		184D17461CBB58050001D98E /* POSWIFIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSWIFIManager.h; sourceTree = "<group>"; };
 		184D17471CBB58050001D98E /* POSWIFIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POSWIFIManager.m; sourceTree = "<group>"; };
-		184D174B1CBB59430001D98E /* printer_说明文档.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "printer_说明文档.md"; sourceTree = "<group>"; };
 		1894E79F1CAAA60E006FCDE4 /* WIFIInputVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIFIInputVc.h; sourceTree = "<group>"; };
 		1894E7A01CAAA60E006FCDE4 /* WIFIInputVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIFIInputVc.m; sourceTree = "<group>"; };
 		18AE38331CA29D0400DCFCDE /* POSInputVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSInputVc.h; sourceTree = "<group>"; };
@@ -136,6 +143,21 @@
 		18E462FB1CA5425700F8DACE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2E64D68E1CD34E080009D102 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		2E64D68F1CD34E080009D102 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		350E0FA026366CBF00C7DCFF /* Printer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Printer-Bridging-Header.h"; sourceTree = "<group>"; };
+		350E0FA126366CBF00C7DCFF /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		3536F825276890AA00D5396F /* PrinterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterManager.h; sourceTree = "<group>"; };
+		3536F826276890AA00D5396F /* PrinterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrinterManager.m; sourceTree = "<group>"; };
+		353BB8BC2639604F003CED81 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		353BB8BD2639604F003CED81 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		353BB8BE2639604F003CED81 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		353BB8BF2639604F003CED81 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		353BB8C02639604F003CED81 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		3549851326A8156D0047D0EA /* MyBluetoothDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBluetoothDevice.h; sourceTree = "<group>"; };
+		3549851426A8156D0047D0EA /* MyBluetoothDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBluetoothDevice.m; sourceTree = "<group>"; };
+		3549851626A815C50047D0EA /* BTDeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDeviceCell.h; sourceTree = "<group>"; };
+		3549851726A815C50047D0EA /* BTDeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDeviceCell.m; sourceTree = "<group>"; };
+		35EA011A263AA01000A58592 /* libPosPrintiOSSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPosPrintiOSSdk.a; path = ../../IOSPrintsdk/libPosPrintiOSSdk.a; sourceTree = "<group>"; };
+		35F8266927F5AADE0063595D /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		9BA6FF3B1D3E312E005EA527 /* TscCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TscCommand.h; sourceTree = "<group>"; };
 		9BA6FF3C1D3E312E005EA527 /* TscCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TscCommand.m; sourceTree = "<group>"; };
 		9BA6FF3E1D3E3163005EA527 /* PosCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosCommand.h; sourceTree = "<group>"; };
@@ -199,7 +221,6 @@
 		18BFEA791C9F916000E45C1F = {
 			isa = PBXGroup;
 			children = (
-				184D174B1CBB59430001D98E /* printer_说明文档.md */,
 				18E462FB1CA5425700F8DACE /* SystemConfiguration.framework */,
 				18E462F91CA515DE00F8DACE /* CFNetwork.framework */,
 				18BFEAC71C9FCEFA00E45C1F /* CoreBluetooth.framework */,
@@ -207,6 +228,7 @@
 				18BFEA9E1C9F916000E45C1F /* PrinterTests */,
 				18BFEAA91C9F916000E45C1F /* PrinterUITests */,
 				18BFEA831C9F916000E45C1F /* Products */,
+				35EA0119263AA01000A58592 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +247,10 @@
 			children = (
 				2E64D68E1CD34E080009D102 /* MainViewController.h */,
 				2E64D68F1CD34E080009D102 /* MainViewController.m */,
+				3549851626A815C50047D0EA /* BTDeviceCell.h */,
+				3549851726A815C50047D0EA /* BTDeviceCell.m */,
+				3549851326A8156D0047D0EA /* MyBluetoothDevice.h */,
+				3549851426A8156D0047D0EA /* MyBluetoothDevice.m */,
 				18BFEAB81C9F91BC00E45C1F /* Framework */,
 				18BFEA8B1C9F916000E45C1F /* ViewController.h */,
 				18BFEA8C1C9F916000E45C1F /* ViewController.m */,
@@ -232,12 +258,14 @@
 				18AD557E1CB75B390014BA2C /* WIFIVc */,
 				18BFEA8E1C9F916000E45C1F /* Main.storyboard */,
 				18BFEA881C9F916000E45C1F /* AppDelegate.h */,
+				35EA0111263A4D4400A58592 /* Swift */,
 				18BFEA891C9F916000E45C1F /* AppDelegate.m */,
 				18BFEA911C9F916000E45C1F /* Assets.xcassets */,
 				18BFEA931C9F916000E45C1F /* LaunchScreen.storyboard */,
 				18BFEA961C9F916000E45C1F /* Info.plist */,
 				18BFEAC31C9FAB6500E45C1F /* Tools */,
 				18BFEA851C9F916000E45C1F /* Supporting Files */,
+				350E0FA026366CBF00C7DCFF /* Printer-Bridging-Header.h */,
 			);
 			path = Printer;
 			sourceTree = "<group>";
@@ -281,6 +309,7 @@
 		18BFEAC31C9FAB6500E45C1F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				353BB8BB2639604F003CED81 /* GCD */,
 				18E462F21CA4CDFB00F8DACE /* AsyncSocket */,
 				184D17411CBB58050001D98E /* BLEManager.h */,
 				184D17421CBB58050001D98E /* BLEManager.m */,
@@ -352,6 +381,37 @@
 			path = ../Framework;
 			sourceTree = "<group>";
 		};
+		353BB8BB2639604F003CED81 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				353BB8BC2639604F003CED81 /* Documentation.html */,
+				3536F825276890AA00D5396F /* PrinterManager.h */,
+				3536F826276890AA00D5396F /* PrinterManager.m */,
+				353BB8BE2639604F003CED81 /* GCDAsyncSocket.m */,
+				353BB8C02639604F003CED81 /* GCDAsyncSocket.h */,
+				353BB8BD2639604F003CED81 /* GCDAsyncUdpSocket.m */,
+				353BB8BF2639604F003CED81 /* GCDAsyncUdpSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		35EA0111263A4D4400A58592 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				350E0FA126366CBF00C7DCFF /* SwiftViewController.swift */,
+				35F8266927F5AADE0063595D /* TestViewController.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		35EA0119263AA01000A58592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35EA011A263AA01000A58592 /* libPosPrintiOSSdk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,7 +479,8 @@
 				TargetAttributes = {
 					18BFEA811C9F916000E45C1F = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = N4VCXGD42U;
+						DevelopmentTeam = HCR8KQPRXW;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
 					18BFEA9A1C9F916000E45C1F = {
@@ -459,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BFEA951C9F916000E45C1F /* LaunchScreen.storyboard in Resources */,
+				353BB8C126396050003CED81 /* Documentation.html in Resources */,
 				18BFEA921C9F916000E45C1F /* Assets.xcassets in Resources */,
 				18C45BF81CA0E262001F2FCC /* MBProgressHUD.bundle in Resources */,
 				18BFEAF31CA00EF300E45C1F /* IQKeyboardManager.bundle in Resources */,
@@ -498,11 +560,16 @@
 				18C45BF91CA0E262001F2FCC /* MBProgressHUD.m in Sources */,
 				1839F1021CB3D01D000D7D23 /* TSCCommandVc.m in Sources */,
 				18C45BF71CA0E262001F2FCC /* MBProgressHUD+Add.m in Sources */,
+				353BB8C326396050003CED81 /* GCDAsyncSocket.m in Sources */,
 				18E462F81CA4CE0700F8DACE /* AsyncUdpSocket.m in Sources */,
 				9BA6FF431D3E3181005EA527 /* ImageTranster.m in Sources */,
+				3549851826A815C50047D0EA /* BTDeviceCell.m in Sources */,
 				18BFEAF71CA00EF300E45C1F /* IQTitleBarButtonItem.m in Sources */,
 				18BFEA8A1C9F916000E45C1F /* AppDelegate.m in Sources */,
 				18BFEAFB1CA00EF300E45C1F /* UIView+IQKeyboardToolbar.m in Sources */,
+				3549851526A8156D0047D0EA /* MyBluetoothDevice.m in Sources */,
+				353BB8C226396050003CED81 /* GCDAsyncUdpSocket.m in Sources */,
+				3536F827276890AA00D5396F /* PrinterManager.m in Sources */,
 				18BFEAF51CA00EF300E45C1F /* IQSegmentedNextPrevious.m in Sources */,
 				9BA6FF401D3E3163005EA527 /* PosCommand.m in Sources */,
 				18E462F71CA4CE0700F8DACE /* AsyncSocket.m in Sources */,
@@ -510,10 +577,12 @@
 				18AE38351CA29D0400DCFCDE /* POSInputVc.m in Sources */,
 				18C45C3C1CA14322001F2FCC /* POSTestVc.m in Sources */,
 				184D17481CBB58050001D98E /* BLEManager.m in Sources */,
+				350E0FA226366CBF00C7DCFF /* SwiftViewController.swift in Sources */,
 				18BFEAFA1CA00EF300E45C1F /* UIView+Hierarchy.m in Sources */,
 				1894E7A11CAAA60E006FCDE4 /* WIFIInputVc.m in Sources */,
 				184D17491CBB58050001D98E /* POSBLEManager.m in Sources */,
 				18BFEAF61CA00EF300E45C1F /* IQTextView.m in Sources */,
+				35F8266A27F5AADE0063595D /* TestViewController.swift in Sources */,
 				18BFEA871C9F916000E45C1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,7 +655,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guangqin Li (25CBLNUB24)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -605,7 +674,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -642,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -653,10 +722,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4VCXGD42U;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = HCR8KQPRXW;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Printer/PrefixHeader.pch";
 				INFOPLIST_FILE = Printer/Info.plist;
@@ -667,10 +738,14 @@
 					"$(PROJECT_DIR)/Printer/Framework",
 					"$(PROJECT_DIR)/Printer",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ai.easyeat.parnterapp;
+				MARKETING_VERSION = 1.1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zywell.iosdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Printer/Printer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -679,10 +754,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N4VCXGD42U;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = HCR8KQPRXW;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Printer/PrefixHeader.pch";
 				INFOPLIST_FILE = Printer/Info.plist;
@@ -693,10 +770,13 @@
 					"$(PROJECT_DIR)/Printer/Framework",
 					"$(PROJECT_DIR)/Printer",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zywell.iosdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Printer/Printer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -704,6 +784,7 @@
 		18BFEAB31C9F916000E45C1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PrinterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -716,6 +797,7 @@
 		18BFEAB41C9F916000E45C1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PrinterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -728,6 +810,7 @@
 		18BFEAB61C9F916000E45C1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PrinterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.femto.PrinterUITests;
@@ -740,6 +823,7 @@
 		18BFEAB71C9F916000E45C1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = PrinterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.femto.PrinterUITests;

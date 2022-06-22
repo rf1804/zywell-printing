@@ -72,7 +72,8 @@ typedef void(^TSCCompletionBlock)(CBCharacteristic *datcharacter);
  *  Manually disconnect the connected device
  */
 -(void)POSdisconnectRootPeripheral;
-
+// 是否连接成功
+@property (nonatomic,assign) BOOL connectOK;
 /**
  * Write print data
  * @param peripheral Device Information
